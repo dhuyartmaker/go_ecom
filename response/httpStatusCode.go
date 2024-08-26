@@ -3,9 +3,11 @@ package response
 const (
 	ErrCodeSuccess      = 20001
 	ErrCodeParamInvalid = 20003
+	ErrorCodeAuthorization = 40001
 )
 
-var msg = map[int]string{
+var Msg = map[int]string{
 	ErrCodeSuccess:      "success",
 	ErrCodeParamInvalid: "Invalid",
+	ErrorCodeAuthorization: "Unauthorization!",
 }
