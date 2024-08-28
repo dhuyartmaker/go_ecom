@@ -1,7 +1,11 @@
 server:
   port: 8002
-databases:
-  - user: "Huy"
-    password: "password"
-  - user: "Hehe"
-    password: "password"
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: password
+  dbname: go_ecom
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600

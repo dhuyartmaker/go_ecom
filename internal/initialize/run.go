@@ -9,5 +9,10 @@ import (
 func Initialize() {
 	LoadConfig()
 	fmt.Print("Load config:", global.Config.Server.Port)
+	InitLoger()
+	global.Logger.Info("Config Logger")
+	InitMysql()
+	InitRedis()
 	InitRouter()
+
 }

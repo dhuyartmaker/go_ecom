@@ -1,0 +1,6 @@
+{"level":"INFO","time":"2024-08-28T14:04:26.617+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-28T15:46:47.163+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-28T16:43:50.295+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-28T16:45:20.244+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-28T16:46:41.325+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-28T16:46:41.378+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
