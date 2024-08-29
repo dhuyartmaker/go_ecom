@@ -8,7 +8,8 @@ import (
 
 type ConfigStruct struct {
 	Server struct {
-		Port int `mapstructure:"port"`
+		Port int    `mapstructure:"port"`
+		Mode string `mapstructure:"mode"`
 	} `mapstructure:"server"`
 	Mysql struct {
 		Host            string `mapstructure:"host"`
@@ -25,6 +26,6 @@ type ConfigStruct struct {
 var (
 	Config ConfigStruct
 	Logger *logger.LoggerZap
-	Mdb *gorm.DB
-	Rdb *redis.Client
+	Mdb    *gorm.DB
+	Rdb    *redis.Client
 )
