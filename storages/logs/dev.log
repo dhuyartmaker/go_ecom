@@ -10,3 +10,7 @@
 {"level":"INFO","time":"2024-08-29T10:20:36.108+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
 {"level":"INFO","time":"2024-08-29T10:20:54.959+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
 {"level":"INFO","time":"2024-08-29T10:20:55.054+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
+{"level":"INFO","time":"2024-08-29T13:58:18.089+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-29T13:58:18.245+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
+{"level":"INFO","time":"2024-08-29T14:00:50.385+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-29T14:00:50.485+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}

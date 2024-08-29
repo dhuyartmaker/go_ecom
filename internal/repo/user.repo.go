@@ -1,19 +1,16 @@
 package repo
 
-import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
-)
-
-type UserRepository struct {}
-
-func NewUserRepository() *UserRepository {
-	return &UserRepository{}
+type IUserRepository interface {
+	GetUserByEmail(email string) string
 }
 
-func (ur *UserRepository) GetUser(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": "pong",
-	})
+type userRepository struct{}
+
+// GetUserByEmail implements IUserRepository.
+func (*userRepository) GetUserByEmail(email string) string {
+	return "Huynh Duc Huy"
+}
+
+func NewUserRepository() IUserRepository {
+	return &userRepository{}
 }

@@ -7,15 +7,16 @@ import (
 )
 
 type UserController struct {
-	userService *service.UserService
+	UserService service.IUserService
 }
 
-func NewUserController() *UserController {
+func NewUserController(userService service.IUserService) *UserController {
 	return &UserController{
-		userService: service.NewUserService(),
+		UserService: userService,
 	}
 }
 
 func (uc *UserController) GetUser(c *gin.Context) {
-	response.SuccessResponse(c, 20001, []string {"huy","khung","met","moi"})
+	result := uc.UserService.GetUser()
+	response.SuccessResponse(c, 20001, []string {result})
 }

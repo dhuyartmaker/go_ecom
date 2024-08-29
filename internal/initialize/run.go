@@ -13,6 +13,6 @@ func Initialize() {
 	global.Logger.Info("Config Logger")
 	InitMysql()
 	InitRedis()
-	InitRouter()
-
+	r := InitRouter()
+	r.Run(fmt.Sprintf(":%d", global.Config.Server.Port))
 }
