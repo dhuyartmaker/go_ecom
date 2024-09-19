@@ -2,7 +2,7 @@ server:
   port: 8002
   mode: "dev"
 mysql:
-  host: 127.0.0.1
+  host: mysql_container
   port: 3306
   username: root
   password: password

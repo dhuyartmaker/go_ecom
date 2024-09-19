@@ -14,3 +14,7 @@
 {"level":"INFO","time":"2024-08-29T13:58:18.245+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
 {"level":"INFO","time":"2024-08-29T14:00:50.385+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
 {"level":"INFO","time":"2024-08-29T14:00:50.485+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
+{"level":"INFO","time":"2024-08-29T14:32:38.382+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"INFO","time":"2024-08-29T14:32:38.482+0700","caller":"initialize/redis.go:44","msg":"Value score ::","score":"100"}
+{"level":"INFO","time":"2024-09-19T17:47:39.237+0700","caller":"initialize/run.go:13","msg":"Config Logger"}
+{"level":"ERROR","time":"2024-09-19T17:47:41.961+0700","caller":"initialize/mysql.go:16","msg":"Init mysql error!","error":"dial tcp: lookup mysql_container: no such host","stacktrace":"github.com/go-ecommerce/internal/initialize.checkErrorPanic\n\tC:/Users/duynh/Code/golang-prj/go_ecom/internal/initialize/mysql.go:16\ngithub.com/go-ecommerce/internal/initialize.InitMysql\n\tC:/Users/duynh/Code/golang-prj/go_ecom/internal/initialize/mysql.go:29\ngithub.com/go-ecommerce/internal/initialize.Initialize\n\tC:/Users/duynh/Code/golang-prj/go_ecom/internal/initialize/run.go:14\nmain.main\n\tC:/Users/duynh/Code/golang-prj/go_ecom/cmd/server/main.go:6\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:267"}

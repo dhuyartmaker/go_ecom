@@ -1,0 +1,1 @@
+docker run --link mysql_container:mysql_container --network=network_name  -p 8004:8002 crm.shopdev.com
