@@ -1,11 +1,14 @@
 package service
 
 import (
+	"fmt"
+
 	"github.com/go-ecommerce/internal/repo"
 )
 
 type IUserService interface {
 	GetUser() string
+	Register(email string)
 }
 
 type userService struct {
@@ -19,6 +22,13 @@ func NewUserService(userRepo repo.IUserRepository) IUserService {
 }
 
 func (ur *userService) GetUser() string {
-	result := ur.UserRepository.GetUserByEmail("duchuy2411itd@gmail.com")
-	return result
+	ur.UserRepository.GetUserByEmail("duchuy2411itd@gmail.com")
+	return "ok"
+}
+
+func (ur *userService) Register(email string) {
+	otp := 123456
+
+	fmt.Printf("Otp is %d", otp)
+	// Save in Redis
 }
